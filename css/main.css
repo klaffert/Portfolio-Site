@@ -28,17 +28,14 @@ body {
 
 /****** HEADER ******/
 
+header .full-width {
+  text-align: center;
+}
+
 header {
   height: 600px;
   background: url('../img/header.jpg');
   background-size: color;
-}
-
-header h1 {
-  font-family: 'Lora', serif;
-  font-size: 38px;
-  color: #ecf1f1;
-  padding: 65px 0 65px 25px;
 }
 
 nav {
@@ -60,23 +57,12 @@ nav ul li a {
   padding-left: 80px;
 }
 header h2 {
-  width: 500px;
-  clear: both;
   font-family: 'Lora', serif;
-  font-size: 72px;
-  line-height: 80px;
-  color: #9b9b9b;
-  padding: 20px 0 20px 25px;
+  font-size: 100px;
+  color: #ecf1f1;
+  padding: 65px 0 65px 25px;
 }
 
-header h3 {
-  width: 1000px;
-  clear: both;
-  font-family: 'Lora', serif;
-  font-size: 50px;
-  line-height: 80px;
-  padding: 20px 0 20px 25px;
-}
 /****** ABOUT ******/
 
 #about {
@@ -105,7 +91,8 @@ header h3 {
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-  display: bl;
+  max-width: 100%;
+  height: auto;
 }
 
 /****** WORK ******/
