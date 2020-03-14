@@ -1,82 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Kelliann Lafferty | Portfolio</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-  <script src="https://kit.fontawesome.com/5215b79217.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kelliann Lafferty</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-
   <header>
-    <div class="full-width">
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="resume/index.html">Resume</a></li>
-          <li><a href="https://dev.to/klaffert">Blog</a> </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <h2>Kelliann Lafferty</h2>
-      <h4>Software Developer</h4>
+    <div class="menu-toggler">
+      <div class="bar-half start"></div>
+      <div class="bar"></div>
+      <div class="bar-half end"></div>
+
+    </div>
+    <nav class="top-nav">
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="nav link">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="nav link">About</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="nav link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#experience" class="nav link">Experience</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="landing-text">
+      <h1>Kelliann Lafferty</h1>
+      <h6>Software Developer</h6>
     </div>
   </header>
 
-  <main>
-    <section id="about">
-      <div class="full-width">
-        <h2>A little bit about me.</h2>
-        <div class="half-width">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-        </div>
-        <div class="half-width">
-          <img src="img/headshot.jpg" id="about-img" alt="portfolio photo" />
-        </div>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="profile-img">
+        <img src="images/headshot.jpg" alt="" />
       </div>
-    </section>
-
-    <section id="work">
-      <div class="full-width">
-        <h2>Projects</h2>
-        <div class="third-width">
-          Project #1
+      <div class="about-details">
+        <div class="about-heading">
+          <h1>About</h1>
+          <h6>Myself</h6>
         </div>
-        <div class="third-width">
-          Project #2
-        </div>
-        <div class="third-width">
-          Project #3
-        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corrupti officia nulla nihil minima.
+          Commodi sapiente, a impedit quo error blanditiis eius fugiat dolorum ad, quidem ab aut. Impedit, numquam.</p>
       </div>
-    </section>
+      <div class="social-media">
+        <ul class="nav-list">
+          <li>
+            <a href="" class="icon-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="" class="icon-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="icon-link">
+              <i class="fab fa-dev"></i>
+            </a>
 
-    <footer id="contact">
-      <div class="full-width">
-        <h2>Get in touch!</h2>
-        <h3 id="email-header"></h3>
-        <a href="mailto:lafferty.kelliann@gmail.com">
-          <i class="far fa-envelope"></i>lafferty.kelliann@gmail.com</a>
-        <h3 id="socialmedia-header">Or, find me on the interwebs</h3>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/kelliann-lafferty/"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/klaffert"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://dev.to/klaffert"><i class="fab fa-dev"></i></a></li>
+          </li>
         </ul>
-
       </div>
-    </footer>
-  </main>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
