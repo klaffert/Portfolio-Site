@@ -35,7 +35,7 @@ header .full-width {
 header {
   height: 600px;
   background: url('../img/header.jpg');
-  background-size: color;
+  background-size: cover;
 }
 
 nav {
@@ -89,10 +89,7 @@ header h2 {
 #about img {
   border-radius: 50%;
   width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  height: auto;
+  padding: 0 130px;
 }
 
 /****** WORK ******/
@@ -131,21 +128,21 @@ header h2 {
 }
 
 #contact .full-width {
+  text-align: center;
   padding: 110px 0;
 }
-#contact img#contact-img {
-  margin-left: 25px;
-  border: 12px solid #ffffff;
-}
+
 #contact h2,
 #contact #email-header,
 #contact #socialmedia-header,
 #contact ul {
   padding-left: 115px;
 }
+
 #contact #envelope {
   padding: 0 10px 0 115px;
 }
+
 #contact h2 {
   font-family: 'Lora', serif;
   font-size: 36px;
@@ -165,7 +162,7 @@ header h2 {
 }
 #contact a {
   text-decoration: none;
-  color: #c49075;
+  color: #b3a0a7;
   font-weight: bold;
   font-size: 28px;
 }
