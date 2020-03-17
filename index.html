@@ -3,82 +3,104 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kelliann Lafferty</title>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+  <!-- Update these with your own fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
   <header>
-    <div class="menu-toggler">
-      <div class="bar-half start"></div>
-      <div class="bar"></div>
-      <div class="bar-half end"></div>
-
+    <div class="logo">
     </div>
-    <nav class="top-nav">
-      <ul class="nav-list">
-        <li>
-          <a href="index.html" class="nav link">Home</a>
-        </li>
-        <li>
-          <a href="#about" class="nav link">About</a>
-        </li>
-        <li>
-          <a href="#portfolio" class="nav link">Portfolio</a>
-        </li>
-        <li>
-          <a href="#experience" class="nav link">Experience</a>
-        </li>
-        <li>
-          <a href="#contact" class="nav link">Contact</a>
-        </li>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
       </ul>
     </nav>
-    <div class="landing-text">
-      <h1>Kelliann Lafferty</h1>
-      <h6>Software Developer</h6>
-    </div>
   </header>
 
-  <section class="about" id="about">
-    <div class="container">
-      <div class="profile-img">
-        <img src="images/headshot.jpg" alt="" />
-      </div>
-      <div class="about-details">
-        <div class="about-heading">
-          <h1>About</h1>
-          <h6>Myself</h6>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corrupti officia nulla nihil minima.
-          Commodi sapiente, a impedit quo error blanditiis eius fugiat dolorum ad, quidem ab aut. Impedit, numquam.</p>
-      </div>
-      <div class="social-media">
-        <ul class="nav-list">
-          <li>
-            <a href="" class="icon-link">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="" class="icon-link">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="icon-link">
-              <i class="fab fa-dev"></i>
-            </a>
-
-          </li>
-        </ul>
-      </div>
-    </div>
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Hi, I am <strong>Kelliann Lafferty</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">
+      Front-end Developer
+    </p>
+    <img src="images/kl_headshot.jpg" alt="Kelliann Lafferty">
   </section>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="main.js"></script>
 </body>
+
+
+<!-- About me -->
+<section class="about-me" id="about">
+  <h2 class="section__title section__title--about">Who I am</h2>
+  <p class="section__subtitle section_subtitle--about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio,
+    id praesentium! Voluptates ex reiciendis deleniti fugit magnam, odit aut aspernatur. Quo sed distinctio ab
+    praesentium deserunt incidunt minima asperiores iusto.</p>
+
+  <div class="about-me__body">
+    <p></p>
+    <p></p>
+  </div>
+
+  <!-- <img> -->
+</section>
+
+<!-- My Work -->
+<section class="my-work" id="work">
+  <h2 class="section__title">My work</h2>
+  <p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maxime expedita blanditiis
+    ut reprehenderit
+    inventore nobis ipsam excepturi, incidunt quo est deserunt adipisci unde natus at veritatis qui quibusdam labore?
+  </p>
+  <div class="portfolio">
+
+    <!-- Portfolio Item 1 -->
+    <a href="#" class="portfolio__item">
+      <img class="portfolio__img">
+    </a>
+
+    <!-- Portfolio Item 2 -->
+    <a href="#" class="portfolio__item">
+      <img class="portfolio__img">
+    </a>
+
+    <!-- Portfolio Item 3 -->
+    <a href="#" class="portfolio__item">
+      <img class="portfolio__img">
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+
+<footer>
+  <a href="mailto:lafferty.kelliann@gmail.com" class="footer-link">
+    lafferty.kelliann@gmail.com
+  </a>
+  <ul class="social-list">
+    <li class="social-list__item"><a class="social-list__link"
+        href="https://www.linkedin.com/in/kelliann-lafferty/">linkedin</a>
+    </li>
+    <li class="social-list__item"><a class="social-list__link" href="https://www.github.com/klaffert">github</a>
+    </li>
+    <li class="social-list__item"><a class="social-list__link" href="https://dev.to/klaffert">dev.to</a> </li>
+  </ul>
+</footer>
 
 </html>
