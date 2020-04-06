@@ -13,9 +13,9 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
-  --clr-light: #fff;
-  --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-light: #ecf0f1;
+  --clr-dark: #58646b;
+  --clr-accent: #b8a9ae;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -379,7 +379,6 @@ header {
     z-index: 2;
   }
 }
-
 /* My Work */
 
 .my-work {
